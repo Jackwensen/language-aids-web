@@ -40,20 +40,21 @@
                     >
                       <a href="#/">
                         <i class="material-icons">apps</i>
-                        <p>Home</p>
+                        <p>主页</p>
                       </a>
                     </md-button>
                   </div>
                 </a>
               </li>
 
-              <md-list-item
-                href="https://demos.creative-tim.com/vue-material-kit/documentation/"
-                target="_blank"
-                v-if="showDownload"
-              >
+              <md-list-item href="#/landing" v-if="showDownload">
                 <i class="material-icons">content_paste</i>
-                <p>Documentation</p>
+                <p>文档</p>
+              </md-list-item>
+
+              <md-list-item href="#/login" v-if="showDownload">
+                <i class="material-icons">fingerprint</i>
+                <p>登录</p>
               </md-list-item>
 
               <li class="md-list-item" v-else>
@@ -69,25 +70,19 @@
                         data-toggle="dropdown"
                       >
                         <i class="material-icons">view_carousel</i>
-                        <p>Examples</p>
+                        <p>菜单</p>
                       </md-button>
                       <ul class="dropdown-menu dropdown-with-icons">
                         <li>
                           <a href="#/landing">
                             <i class="material-icons">view_day</i>
-                            <p>Landing Page</p>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#/login">
-                            <i class="material-icons">fingerprint</i>
-                            <p>Login Page</p>
+                            <p>说明文档</p>
                           </a>
                         </li>
                         <li>
                           <a href="#/profile">
                             <i class="material-icons">account_circle</i>
-                            <p>Profile Page</p>
+                            <p>功能页</p>
                           </a>
                         </li>
                       </ul>

@@ -8,13 +8,8 @@
       <nav>
         <ul>
           <li>
-            <a href="https://www.creative-tim.com">
-              Creative Tim
-            </a>
-          </li>
-          <li>
-            <a href="https:///presentation.creative-tim.com">
-              About Us
+            <a href="https://youth.pku.edu.cn/tzgg/zytz/357979.htm">
+              北京大学第30届“挑战杯”项目
             </a>
           </li>
         </ul>

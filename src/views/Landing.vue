@@ -6,7 +6,7 @@
           <div
             class="md-layout-item md-size-50 md-small-size-70 md-xsmall-size-100"
           >
-            <h1 class="title">Your Story Starts With Us.</h1>
+            <h1 class="title">“以字传情，为爱发声”</h1>
             <h4>
               Every landing page needs a small description after the big bold
               title, that's why we added this text here. Add here all the
@@ -31,7 +31,7 @@
             <div
               class="md-layout-item md-size-66 md-xsmall-size-100 mx-auto text-center"
             >
-              <h2 class="title text-center">Let's talk product</h2>
+              <h2 class="title text-center">项目介绍（待完成）</h2>
               <h5 class="description">
                 This is the paragraph where you can write more details about
                 your product. Keep you user engaged by providing meaningful
@@ -88,7 +88,7 @@
       </div>
       <div class="section text-center">
         <div class="container">
-          <h2 class="title">Here is our team</h2>
+          <h2 class="title">小组成员（待完成）</h2>
           <div class="team">
             <div class="md-layout">
               <div class="md-layout-item md-medium-size-33 md-small-size-100">
@@ -231,46 +231,6 @@
                   </md-card>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section section-contacts">
-        <div class="container">
-          <div class="md-layout">
-            <div class="md-layout-item md-size-66 md-xsmall-size-100 mx-auto">
-              <h2 class="text-center title">Work with us</h2>
-              <h4 class="text-center description">
-                Divide details about your product or agency work into parts.
-                Write a few lines about each one and contact us about any
-                further collaboration. We will responde get back to you in a
-                couple of hours.
-              </h4>
-              <form class="contact-form">
-                <div class="md-layout">
-                  <div class="md-layout-item md-size-50">
-                    <md-field>
-                      <label>Your Name</label>
-                      <md-input v-model="name" type="text"></md-input>
-                    </md-field>
-                  </div>
-                  <div class="md-layout-item md-size-50">
-                    <md-field>
-                      <label>Your Email</label>
-                      <md-input v-model="email" type="email"></md-input>
-                    </md-field>
-                  </div>
-                </div>
-                <md-field maxlength="5">
-                  <label>Your Message</label>
-                  <md-textarea v-model="message"></md-textarea>
-                </md-field>
-                <div class="md-layout">
-                  <div class="md-layout-item md-size-33 mx-auto text-center">
-                    <md-button class="md-success">Send Message</md-button>
-                  </div>
-                </div>
-              </form>
             </div>
           </div>
         </div>
