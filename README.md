@@ -1,30 +1,3 @@
-# [Vue Material Kit](https://demos.creative-tim.com/vue-material-kit) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Vue%20Material%20Kit%20-%20Material%20Design%20UI%20Kit%20for%20Vue.js%20https%3A//www.creative-tim.com/product/vue-material-kit%20%23vuejs%20%23ui%20%23kit%20%23vuematerial%20%40creativetim)
-
-
-![version](https://img.shields.io/badge/version-1.2.2-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/vue-material-kit.svg)](https://github.com/creativetimofficial/vue-material-kit/issues?q=is%3Aopen+is%3Aissue) [![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/creativetimofficial/vue-material-kit.svg?maxAge=259200)](https://github.com/creativetimofficial/vue-material-kit/issues?q=is%3Aissue+is%3Aclosed) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
-
-![Product Gif](https://s3.amazonaws.com/creativetim_bucket/products/97/original/opt_mk_vue_thumbnail.jpg)
-
-Vue Material Kit is a beautiful resource built over [Vue Material](https://vuematerial.io/) and [Vuejs](https://vuejs.org/v2/guide/). It will help you get started developing UI Kits in no time. Vue Material Kit is the official Vuejs version of the Original [Material Kit](https://www.creative-tim.com/product/material-kit). Using the UI Kit is pretty simple but requires basic knowledge of Javascript, [Vuejs](https://vuejs.org/v2/guide/) and [Vue Router](https://router.vuejs.org/en/).
-
-We have created it thinking about things you actually need in a dashboard. Vue Material Kit contains handpicked and optimised Vuejs plugins. Everything is designed to fit with one another. As you will be able to see, the dashboard you can access on Creative Tim is a customisation of this product.
-
-Let us know what you think and what we can improve below. And good luck with development!
-
-## Table of Contents
-
-* [Versions](#versions)
-* [Demo](#demo)
-* [Quick Start](#quick-start)
-* [Documentation](#documentation)
-* [File Structure](#file-structure)
-* [Browser Support](#browser-support)
-* [Resources](#resources)
-* [Reporting Issues](#reporting-issues)
-* [Technical Support or Questions](#technical-support-or-questions)
-* [Licensing](#licensing)
-* [Useful Links](#useful-links)
-
 
 ## Versions
 
