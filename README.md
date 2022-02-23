@@ -1,9 +1,8 @@
 ## File Structure
 
-Within the download you'll find the following directories and files:
 
 ```
-vue-material-kit/
+/
 
 ├── CHANGELOG.md
 ├── README.md
