@@ -1,5 +1,15 @@
-## File Structure
+## instal
 
+首先需要有node和npm（npm随node自动安装）。
+```
+npm install
+
+npm run dev
+```
+
+
+
+## 文件结构
 
 ```
 /

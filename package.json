@@ -1,8 +1,8 @@
 {
-  "name": "vue-material-kit",
-  "author": "Creative Tim https://www.creative-tim.com/",
-  "description": "Vue Material Kit",
-  "version": "1.2.2",
+  "name": "language-aids-web",
+  "author": "pku tiaozhanbei",
+  "description": "Language Aids Web",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve --open",
