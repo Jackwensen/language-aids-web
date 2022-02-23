@@ -1,4 +1,4 @@
-## instal
+## install
 
 首先需要有node和npm（npm随node自动安装）。
 ```
