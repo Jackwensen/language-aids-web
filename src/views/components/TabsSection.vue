@@ -17,7 +17,7 @@
                       type="textarea"
                       :rows="2"
                       placeholder="请输入内容"
-                      maxlength="10"
+                      maxlength="50"
                       show-word-limit
                       v-model="textarea"
                     >
