@@ -11,23 +11,64 @@
                   <p>
                     帮助语言障碍人士更好地交流。
                   </p>
-                  <form>
-                    <md-field>
-                      <label>中文（简体）</label>
-                      <md-textarea
-                        v-model="textarea"
-                        md-counter="100"
-                      ></md-textarea>
-                    </md-field>
-                  </form>
-                  <form>
-                    <md-field>
-                      <label>中文（已纠正）</label>
-                      <md-textarea v-model="textarea"></md-textarea>
-                    </md-field>
-                  </form>
+                  <el-form>
+                    <el-form-item label="中文（简体）:"> </el-form-item>
+                    <el-input
+                      type="textarea"
+                      :rows="2"
+                      placeholder="请输入内容"
+                      maxlength="10"
+                      show-word-limit
+                      v-model="textarea"
+                    >
+                    </el-input>
+                    <md-button
+                      class="md-primary md-round md-info"
+                      @click="onSubmit"
+                      >纠正</md-button
+                    >
+                    <el-form-item label="中文（已纠正）:">
+                      <el-input
+                        type="textarea"
+                        v-model="modifiedText"
+                        :disabled="true"
+                      ></el-input>
+                    </el-form-item>
+                  </el-form>
                   <br />
-                  <md-content>手语</md-content>
+                  <div>
+                    <el-divider
+                      ><i class="el-icon-document-remove"></i
+                      ><span>手语翻译</span></el-divider
+                    >
+                    <el-table
+                      :data="list"
+                      style="width: 100%"
+                      v-loading="listLoading"
+                      border
+                      highlight-current-row
+                      max-height="600"
+                    >
+                      <el-table-column label="图片" align="center" width="250%">
+                        <template slot-scope="scope">
+                          <el-image
+                            style="width: 100px; height: 100px"
+                            :src="scope.row.imgsrc"
+                          />
+                        </template>
+                      </el-table-column>
+                      <el-table-column label="字" align="center" width="150%">
+                        <template slot-scope="scope">
+                          <span>{{ scope.row.meaning }}</span>
+                        </template>
+                      </el-table-column>
+                      <el-table-column label="含义" align="center" width="250%">
+                        <template slot-scope="scope">
+                          <span>{{ scope.row.note }}</span>
+                        </template>
+                      </el-table-column>
+                    </el-table>
+                  </div>
                 </md-tab>
 
                 <md-tab id="tab-pages" md-label="日常语句模板" md-icon="chat">
@@ -70,8 +111,36 @@ export default {
   },
   data() {
     return {
-      textarea: null
+      textarea: "",
+      modifiedText: "",
+      list: null,
+      listLoading: false
     };
+  },
+  methods: {
+    onSubmit() {
+      if (this.textarea !== "") {
+        this.listLoading = true;
+        fetch(`http://localhost:5000/text2signal/${this.textarea}`, {
+          method: "get",
+          headers: { "Content-Type": "application/json" }
+        })
+          .then(res => {
+            // console.log(res);
+            return { data: res };
+          })
+          .then(response => {
+            response.data.json().then(res => {
+              this.list = res.data;
+              this.modifiedText = res.corrected;
+              console.log("text2signal:", res);
+              this.listLoading = false;
+            });
+          });
+      } else {
+        this.$message.error("请输入语句 :）");
+      }
+    }
   }
 };
 </script>
