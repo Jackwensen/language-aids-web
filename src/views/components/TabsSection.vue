@@ -126,7 +126,6 @@ export default {
           headers: { "Content-Type": "application/json" }
         })
           .then(res => {
-            // console.log(res);
             return { data: res };
           })
           .then(response => {

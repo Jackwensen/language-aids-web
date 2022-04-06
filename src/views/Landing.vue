@@ -8,18 +8,9 @@
           >
             <h1 class="title">“以字传情，为爱发声”</h1>
             <h4>
-              Every landing page needs a small description after the big bold
-              title, that's why we added this text here. Add here all the
-              information that can make you or your product create the first
-              impression.
+              数据显示，我国约有2184万名聋哑人。不同于其他残障人士外在明显的缺陷，失聪、失语者的脆弱藏在了耳朵和嘴巴里。由于学习能力的受限，以及听力、语力感知的缺乏，聋哑人没有形成完整的“主谓宾定状补”式语言逻辑，难以用简洁清晰的语言表达出他们内在的想法，于是手语、肢体语言、表情成了他们与外界交流最为常见的方式。可是手语在本质上是专属于听障、语障人士的小语种，无法从根本上解决聋哑人对外沟通的问题，肢体语言和表情也只是表达的辅助性工具，在细节和深层次的概念面前常常显得无能为力。
             </h4>
             <br />
-            <md-button
-              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-              class="md-success md-lg"
-              target="_blank"
-              ><i class="fas fa-play"></i> Watch video</md-button
-            >
           </div>
         </div>
       </div>
@@ -31,13 +22,9 @@
             <div
               class="md-layout-item md-size-66 md-xsmall-size-100 mx-auto text-center"
             >
-              <h2 class="title text-center">项目介绍（待完成）</h2>
+              <h2 class="title text-center">项目介绍</h2>
               <h5 class="description">
-                This is the paragraph where you can write more details about
-                your product. Keep you user engaged by providing meaningful
-                information. Remember that by this time, the user is curious,
-                otherwise he wouldn't scroll to get here. Add a button if you
-                want the user to see more.
+                心潮汹涌千万遍，奈何无法表达来，是众多聋哑人难言的苦涩，他们的情感和内在想法往往随着声音一同戛然而止。正因此，我们希望利用科技为无障碍交流赋能。通过设计一款聋哑人语言辅助工具，对聋哑人的文本进行纠错，从而解决他们“识其字但不明其义”的语言逻辑问题，消除聋哑人与普通人之间的沟通壁垒，帮助聋哑人更好地融入社会。
               </h5>
             </div>
           </div>
@@ -48,11 +35,9 @@
                   <div class="icon icon-info">
                     <md-icon>chat</md-icon>
                   </div>
-                  <h4 class="info-title">Free Chat</h4>
+                  <h4 class="info-title">聋哑人文本纠正：</h4>
                   <p>
-                    Divide details about your product or agency work into parts.
-                    Write a few lines about each one. A paragraph describing a
-                    feature will be enough.
+                    采用准确度和效率最高的MacBERT模型对聋哑人文本进行纠正，并在语料收集的过程中不断训练和更正模型，提高文本纠正服务的准确率。
                   </p>
                 </div>
               </div>
@@ -61,24 +46,9 @@
                   <div class="icon icon-success">
                     <md-icon>verified_user</md-icon>
                   </div>
-                  <h4 class="info-title">Verified Users</h4>
+                  <h4 class="info-title">实际应用系统开发：</h4>
                   <p>
-                    Divide details about your product or agency work into parts.
-                    Write a few lines about each one. A paragraph describing a
-                    feature will be enough.
-                  </p>
-                </div>
-              </div>
-              <div class="md-layout-item md-medium-size-33 md-small-size-100">
-                <div class="info">
-                  <div class="icon icon-danger">
-                    <md-icon>fingerprint</md-icon>
-                  </div>
-                  <h4 class="info-title">Fingerprint</h4>
-                  <p>
-                    Divide details about your product or agency work into parts.
-                    Write a few lines about each one. A paragraph describing a
-                    feature will be enough.
+                    搭建Web在线平台，将纠正后的文本进行可视化的手语展示，并引入百度翻译API，帮助聋哑人学习和了解外国语言。
                   </p>
                 </div>
               </div>
