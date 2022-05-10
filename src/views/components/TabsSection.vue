@@ -178,7 +178,7 @@
                     <div class="block">
                       <el-image
                         style="width: 35%; height: 35%"
-                        :src="src"
+                        :src="img.save"
                       ></el-image>
                     </div>
                   </div>
@@ -221,7 +221,9 @@ export default {
       modifiedText: "",
       list: null,
       listLoading: false,
-      src: "http://pic.616pic.com/ys_b_img/00/19/43/gitbDmOJLS.jpg",
+      img: {
+        save: require("@/assets/img/aids.png") //引号内填写图片路径
+      },
       activeName: "1"
     };
   },
@@ -240,7 +242,7 @@ export default {
             response.data.json().then(res => {
               this.list = res.data;
               this.modifiedText = res.corrected;
-              console.log("text2signal:", res);
+              // console.log("text2signal:", res);
               this.listLoading = false;
             });
           });
